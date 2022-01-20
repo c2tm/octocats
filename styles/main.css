@@ -11,6 +11,7 @@ a {
 
 ul {
     list-style: none;
+    padding: 0rem;
 }
 
 
@@ -24,9 +25,29 @@ li {
 
 .authors {
     position: absolute;
-    top: -6rem;
+    top: -5.6rem;
     right: -23rem;
 
+}
+
+/* .octocat > a {
+    position: relative;
+}
+
+.octocat > a::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;                                   
+    border-top: solid 1.5rem #ECECEC;
+    border-left: solid 1.5rem transparent;
+    border-radius: solid 1.5rem transparent;
+    top: 3.7rem;
+    right: -3.2rem;
+} */
+
+.image-number::before {
+    content: '#';
 }
 
 .image-number {
@@ -43,9 +64,11 @@ a img {
     left: 8rem;
     border-style: none;
     border: solid;
-    border-color: black;
+    border-color: #ECECEC;
+    border-width: .2rem;
     
 }
+
 
 .authors li img {
     position: relative;
@@ -74,5 +97,8 @@ a img {
     text-decoration: none;
     color: black;
 }
+
+
+
 
 
